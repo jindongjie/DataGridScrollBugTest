@@ -5,6 +5,8 @@ VisualStudioVersion = 17.11.35201.85
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DataGridScrollBugTest", "DataGridScrollBugTest.csproj", "{F750F1BA-244E-4FAF-A3A1-987BD12C08B4}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DataGridScrollBugTest.Tests", "..\TestProject1\DataGridScrollBugTest.Tests.csproj", "{6B2CDFE3-4FCA-4EAF-B83E-72006918EDED}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,10 @@ Global
 		{F750F1BA-244E-4FAF-A3A1-987BD12C08B4}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F750F1BA-244E-4FAF-A3A1-987BD12C08B4}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{F750F1BA-244E-4FAF-A3A1-987BD12C08B4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6B2CDFE3-4FCA-4EAF-B83E-72006918EDED}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6B2CDFE3-4FCA-4EAF-B83E-72006918EDED}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6B2CDFE3-4FCA-4EAF-B83E-72006918EDED}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6B2CDFE3-4FCA-4EAF-B83E-72006918EDED}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
