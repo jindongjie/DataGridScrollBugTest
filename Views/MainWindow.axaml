@@ -15,10 +15,48 @@
         <vm:MainWindowViewModel/>
     </Design.DataContext>
     <Grid>
-		<DataGrid Margin="20" ItemsSource="{Binding Items}"
-                  AutoGenerateColumns="True" IsReadOnly="True"
+        <DataGrid Margin="20" ItemsSource="{Binding Items}"
+                  AutoGenerateColumns="False" IsReadOnly="False"
                   GridLinesVisibility="All"
                   BorderThickness="1" BorderBrush="Gray">
+            <DataGrid.Columns>
+                <DataGridTemplateColumn Header="Index" IsReadOnly="False">
+                    <DataGridTemplateColumn.CellTemplate>
+                        <DataTemplate>
+                            <TextBlock Text="{Binding Index}"  Foreground="{Binding HairColorContent}" />
+                        </DataTemplate>
+                    </DataGridTemplateColumn.CellTemplate>
+                </DataGridTemplateColumn>
+                <DataGridTemplateColumn Header="Name" IsReadOnly="False">
+                    <DataGridTemplateColumn.CellTemplate>
+                        <DataTemplate>
+                            <TextBlock Text="{Binding Name}"  Background="{Binding HairColorContent}" />
+                        </DataTemplate>
+                    </DataGridTemplateColumn.CellTemplate>
+                </DataGridTemplateColumn>
+                <DataGridTemplateColumn Header="BirthDay" IsReadOnly="False">
+                    <DataGridTemplateColumn.CellTemplate>
+                        <DataTemplate>
+                            <TextBlock Text="{Binding BirthDay}"  Background="{Binding HairColorContent}"/>
+                        </DataTemplate>
+                    </DataGridTemplateColumn.CellTemplate>
+                </DataGridTemplateColumn>
+                <DataGridTemplateColumn Header="Value" IsReadOnly="False">
+                    <DataGridTemplateColumn.CellTemplate>
+                        <DataTemplate>
+                            <TextBox IsReadOnly="False" Text="{Binding Value}"  Background="{Binding HairColorContent}" />
+                        </DataTemplate>
+                    </DataGridTemplateColumn.CellTemplate>
+                </DataGridTemplateColumn>
+                <DataGridCheckBoxColumn Header="Gender"  Binding="{Binding IsMale}" IsReadOnly="False" />
+                <DataGridTemplateColumn Header="Hair Color" IsReadOnly="False">
+                    <DataGridTemplateColumn.CellTemplate>
+                        <DataTemplate>
+                            <ComboBox Width="120"  SelectedItem="{Binding HairColor}" ItemsSource="{Binding HairColors}"/>
+                        </DataTemplate>
+                    </DataGridTemplateColumn.CellTemplate>
+                </DataGridTemplateColumn>
+            </DataGrid.Columns>
         </DataGrid>
     </Grid>
 
